@@ -1,0 +1,145 @@
+body{
+	margin:1%;
+	padding:1%;
+	font-size:100%;
+}
+
+h1{
+	font-size: 3em; 
+	font-weight: bold;
+	font-family: "Roboto";
+}
+
+.skip{
+	left: -100%;
+	position: absolute;
+	transform: translateY(-100%);
+}
+
+.skip:focus {
+	left: 50%;
+	position: absolute;
+	transform: translateY(0%);
+  }
+
+
+
+img{
+    height: 100px;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.psuedo:hover{
+	background-color: greenyellow;
+}
+
+h2{
+	font-weight: bold;
+}
+
+p, h1, h2 {
+    padding: 15px;
+}
+
+p{
+	font-family: helvetica;
+}
+
+
+nav li{
+	font-family: Arial;
+	padding:10px;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.nav_links{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	text-decoration: none;
+
+}
+
+a:visited{
+	color: black;
+}
+
+a:link{
+	text-decoration: overline;
+}
+
+a:hover{
+	text-decoration: overline greenyellow 5px;
+	}
+.active a{
+		text-decoration: overline blue 5px;
+		
+
+}
+
+.canfield_consortium{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+.google_assistant{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		border-bottom-style: solid;
+		border-width: 1px;
+}
+
+.maize_blue{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.container{
+	max-height: 20%;
+}
+
+footer{
+	border-top-style: solid;
+	border-width: 1px;
+	line-height: 0.2;
+}
+
+#main_resume{
+	background-image: url("../images/pexels_ocean.jpg");
+	background-color: #cccccc;
+	color: white;
+}
+
+#fs-frm{
+	border-style: solid;
+	border-width: 1px;
+}
+
+@keyframes animation1{
+	from {width: 0;}
+	to {width: 500px}
+}
+
+h1{
+	white-space: nowrap;
+	overflow: hidden;
+	width: 30em;
+	animation: animation1 4s steps(60, end);
+}
+
+@media (prefers-reduced-motion){
+	h1{
+		font-size: 3em; 
+		font-weight: bold;
+		font-family: "Roboto";
+		animation: none;
+	}
+}
+
+
